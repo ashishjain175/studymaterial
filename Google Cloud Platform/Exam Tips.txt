@@ -1,0 +1,63 @@
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------	
+GCP Architect Exam Tips
+-----------------------------------------------------------------------------------------------
+
+The GCP Architect exam has a large “devops wisdom” component to go along with the GCP service/resource memorization/understanding component. While developing a high-level understanding and memorizing certain properties of the different GCP components is important, the focus of the exam is on providing high-level architecture recommendations more so than bombarding you with gotchas and bits of obscure trivia. The practice exam is probably the best resource to acclimate yourself to the exam format. 
+
+Here’re a few other tips:
+
+
+1. Don’t necessarily choose the answer you think Google wants to hear – the answer isn’t always the bleeding edge, “cloud-first” solution. Choose the best solution that you think the client will be willing to accept, which more often than not will be a lift-and-shift with some narrowly-scoped infrastructure updates.	
+
+2. The exam is not really GCP-specific. While I didn’t see any mentions of other cloud providers, there were many questions which were of a general ops/devops nature and 	did not mention GCP. These questions were high-level process recommendations (e.g. you won’t be asked how big a class C IP block is, but you might be asked how a major change to a user-facing service could be load/reliability-tested).
+
+3. Many questions boil down to two solutions that are very difficult to choose between. Don’t be too discouraged if your “mark for review” list starts building up early.
+
+
+Take this with a grain of salt, as you aren’t given detailed feedback (PASS/FAIL).
+
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------	
+Preparation 
+-----------------------------------------------------------------------------------------------
+1. Start with Coursera - https://www.coursera.org/specializations/gcp-architecture
+
+Note - Try and watch course videos twice and don't skip any labs.
+
+2. Take Part 2 and Part 3 Linux Academy Course as a crash course 1 week before exam
+Google Certified Professional - Cloud Architect - Part 1
+Google Certified Professional - Cloud Architect - Part 2
+Google Certified Professional - Cloud Architect - Part 3
+
+3. Make sure you do the practice exam as well to get feel of the exam.
+
+Practice Exam - https://cloud.google.com/certification/practice-exam/cloud-architect
+
+4. Cram customer case studies one day before the exam - https://cloud.google.com/certification/guides/cloud-architect/
+
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------	
+
+Focus Areas
+-----------------------------------------------------------------------------------------------
+
+Dataflow ---> processing and transformation (stream / batch data), Cleaning up data coming from Pub/Sub
+
+Pub/Sub ---> data ingestion, real time streaming, This is not a storage solution.
+
+TensorFlow ---> building machine learning models
+
+Dataproc ---> ETL, managed Hadoop/ Spark
+
+BigQuery ---> data warehousing/ analytics
+
+CloudStorage ---> ubiquitous data storage, Unstructured Data
+
+BigTable ---> fast, High Bandwidth, low-latency/ humongous scale data storage used for warehousing.
+
+CloudSQL ---> transactional data storage/ processing, Lift and Shift of MySQL
+
+Stackdriver ---> cloud infrastructure monitoring
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------	

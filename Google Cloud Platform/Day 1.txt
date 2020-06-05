@@ -1,0 +1,93 @@
+Bastion Host
+
+Do not assign public IP to internal server
+tag your bastion host 
+tag your database server
+NAT Gateway - acts as a proxy to allow internal server to access internet without allowing all traffic - download patches and updates
+
+Internet user will only see NAT Gateway IP as public IP for the database host
+
+
+BGP allows for dynamic routing as Site to Site VPN requires manual updation for each subnet range
+
+
+Big Data Notes
+
+Dataproc
+
+Batchdata use case
+ -- hadoop - 90s cluster spin  up
+HDFS and Map Reduce
+
+Native integration between Hadoop and Google Cloud Storage
+Hadoop Cluster can be shutdown and it just costs to run a job and not for maintaing the entire cluster.
+
+spark
+pyspark
+pig
+hyp
+
+No access to master node.
+
+Replace hdfs with gcs and migrate data to GCS
+
+Dataflow - ETL No Ops service
+Jobs are written in Java or Python
+
+Streaming Data yse case (Can be used for Batch Process too)
+
+Pub/Sub - at least one time message deliver. Used for ingestion
+
+Storage : BigQuery -near real time or Bigtable - real time
+
+Analysis - BigQuery - MachineLearning
+
+Ingestion -- ETL -- Storage -- Analyze -- reports
+
+
+Problem Statement 1#
+
+A customer has a global ecommerce website with expansion in Asia, Europe and US.
+Recommend them to build a Highly Available and Loosely coupled architecture.
+
+
+Recommendation : 
+
+Global Load Balancer 
+
+Three Managed Groups - with each having a web server in an auto scaling group
+
+Cross Region
+Pub/Sub for Ingestion - Order Processing
+
+DataFlow - Transform and load the data
+
+Scalable Solution and the workload is predictable and Real time - Cloud Spanner (Expensive)
+
+
+
+
+GSuite Setup
+
+Domain Ownership Required
+Business Name
+Number of Emp
+User Details
+Define the Admin User - Becomes the Organizational Admin
+
+Start Setup
+
+Verify your identity and Domain
+Setup Mail Server
+Create MX records for Mail Exchange
+Add People to your domain
+If you are using entire Gsuite then add MX records to Google Platform
+
+
+
+
+
+
+
+Example : Turbine data for generating electricity
+

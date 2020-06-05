@@ -1,0 +1,3 @@
+1. Apply Network Tag based firewall rules
+2. Spring up an instance with a Docker Container and Run the Application in the browser
+3. Deploy a Hello World applicaiton on App Engine.

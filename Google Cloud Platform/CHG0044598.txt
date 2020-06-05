@@ -1,0 +1,151 @@
+pinvoice2010pool
+
+root@brslp1pupfs001:/SharedFSUX/pinvoice/2010# df -h pinvoice2010pool
+Filesystem             Size   Used  Available Capacity  Mounted on
+pinvoice2010pool       1.6T   1.2T       441G    74%    /SharedFSUX/pinvoice/2010
+root@brslp1pupfs001:/SharedFSUX/pinvoice/2010# zpool list pinvoice2010pool
+NAME               SIZE  ALLOC  FREE  CAP  DEDUP  HEALTH  ALTROOT
+pinvoice2010pool  1.65T  1.19T  467G  72%  1.00x  ONLINE  -
+root@brslp1pupfs001:/SharedFSUX/pinvoice/2010# zpool list | wc -l
+      26
+
+root@brslp1pupfs001:/SharedFSUX/pinvoice/2010# zpool list
+NAME               SIZE  ALLOC   FREE  CAP  DEDUP  HEALTH  ALTROOT
+ambpool           14.9G  5.23G  9.68G  35%  1.00x  ONLINE  -
+anexospool        2.47T   169G  2.31T   6%  1.00x  ONLINE  -
+aplicpool          497G   179G   318G  35%  1.00x  ONLINE  -
+dbapool           92.5G   368M  92.1G   0%  1.00x  ONLINE  -
+dbutlpool         1.09T   829G   289G  74%  1.00x  ONLINE  -
+ebspool            298G   212G  86.5G  71%  1.00x  ONLINE  -
+gedpool           59.5G   163K  59.5G   0%  1.00x  ONLINE  -
+pinvoice2010pool  1.65T  1.19T   467G  72%  1.00x  ONLINE  -
+pinvoice2011pool  2.55T  2.22T   334G  87%  1.00x  ONLINE  -
+pinvoice2012pool  2.42T  2.17T   254G  89%  1.00x  ONLINE  -
+pinvoice2013pool  9.54T  9.38T   167G  98%  1.00x  ONLINE  -
+pinvoice2014pool  13.2T  12.4T   852G  93%  1.00x  ONLINE  -
+pinvoice2015pool  19.7T  17.1T  2.58T  86%  1.00x  ONLINE  -
+pinvoice2016pool  17.1T  16.7T   411G  97%  1.00x  ONLINE  -
+pinvoice2017pool  18.4T  17.9T   514G  97%  1.00x  ONLINE  -
+pinvoice2018pool  17.7T  17.2T   439G  97%  1.00x  ONLINE  -
+pinvoice2019pool  7.96T  7.41T   568G  93%  1.00x  ONLINE  -
+pinvoicepool       298G  8.38G   290G   2%  1.00x  ONLINE  -
+repositoriopool   1.98T  1020G  1012G  50%  1.00x  ONLINE  -
+rpool              278G   204G  73.9G  73%  1.00x  ONLINE  -
+saspool           6.27T  4.44T  1.83T  70%  1.00x  ONLINE  -
+smbpool            796G  6.60G   789G   0%  1.00x  ONLINE  -
+spoaxappool       1.98T   320G  1.67T  15%  1.00x  ONLINE  -
+uploadpool        1.13T   677G   483G  58%  1.00x  ONLINE  -
+webproxy_pool      992G   345G   647G  34%  1.00x  ONLINE  -
+
+
+
+root@brslp1pupfs001:/SharedFSUX/pinvoice/2010# zpool status pinvoice2010pool
+  pool: pinvoice2010pool
+ state: ONLINE
+  scan: none requested
+config:
+
+        NAME                                     STATE     READ WRITE CKSUM
+        pinvoice2010pool                         ONLINE       0     0     0
+          c0t60000970000592600087533034393441d0  ONLINE       0     0     0
+          c0t60000970000592600087533034393445d0  ONLINE       0     0     0
+          c0t60000970000592600087533034394141d0  ONLINE       0     0     0
+          c0t60000970000592600087533032383634d0  ONLINE       0     0     0
+          c0t60000970000592600087533033423538d0  ONLINE       0     0     0
+
+================================================================================================
+
+pinvoice2019pool
+
+root@brslp1pupfs001:~# df -h pinvoice2019pool
+Filesystem             Size   Used  Available Capacity  Mounted on
+pinvoice2019pool       7.8T    31K       441G     1%    /pinvoice2019pool
+root@brslp1pupfs001:~# zpool status pinvoice2019pool
+  pool: pinvoice2019pool
+ state: ONLINE
+  scan: none requested
+config:
+
+        NAME                                     STATE     READ WRITE CKSUM
+        pinvoice2019pool                         ONLINE       0     0     0
+          c0t60000970000592600087533033314633d0  ONLINE       0     0     0
+          c0t60000970000592600087533033323033d0  ONLINE       0     0     0
+          c0t60000970000592600087533033323133d0  ONLINE       0     0     0
+          c0t60000970000592600087533033323233d0  ONLINE       0     0     0
+          c0t60000970000592600087533034393636d0  ONLINE       0     0     0
+          c0t60000970000592600087533034394136d0  ONLINE       0     0     0
+
+errors: No known data errors
+root@brslp1pupfs001:~# zpool list pinvoice2019pool
+NAME               SIZE  ALLOC  FREE  CAP  DEDUP  HEALTH  ALTROOT
+pinvoice2019pool  7.96T  7.41T  568G  93%  1.00x  ONLINE  -
+
+root@brslp1pupfs001:~# zpool list
+NAME               SIZE  ALLOC   FREE  CAP  DEDUP  HEALTH  ALTROOT
+ambpool           14.9G  5.22G  9.68G  35%  1.00x  ONLINE  -
+anexospool        2.47T   169G  2.31T   6%  1.00x  ONLINE  -
+aplicpool          497G   179G   318G  35%  1.00x  ONLINE  -
+dbapool           92.5G   368M  92.1G   0%  1.00x  ONLINE  -
+dbutlpool         1.09T   829G   289G  74%  1.00x  ONLINE  -
+ebspool            298G   212G  86.5G  71%  1.00x  ONLINE  -
+gedpool           59.5G   163K  59.5G   0%  1.00x  ONLINE  -
+pinvoice2010pool  1.65T  1.19T   467G  72%  1.00x  ONLINE  -
+pinvoice2011pool  2.55T  2.22T   334G  87%  1.00x  ONLINE  -
+pinvoice2012pool  2.42T  2.17T   254G  89%  1.00x  ONLINE  -
+pinvoice2013pool  9.54T  9.38T   167G  98%  1.00x  ONLINE  -
+pinvoice2014pool  13.2T  12.4T   852G  93%  1.00x  ONLINE  -
+pinvoice2015pool  19.7T  17.1T  2.58T  86%  1.00x  ONLINE  -
+pinvoice2016pool  17.1T  16.7T   411G  97%  1.00x  ONLINE  -
+pinvoice2017pool  18.4T  17.9T   514G  97%  1.00x  ONLINE  -
+pinvoice2018pool  17.7T  17.2T   439G  97%  1.00x  ONLINE  -
+pinvoice2019pool  7.96T  7.41T   568G  93%  1.00x  ONLINE  -
+pinvoicepool       298G  8.38G   290G   2%  1.00x  ONLINE  -
+repositoriopool   1.98T  1020G  1012G  50%  1.00x  ONLINE  -
+rpool              278G   204G  73.7G  73%  1.00x  ONLINE  -
+saspool           6.27T  4.44T  1.83T  70%  1.00x  ONLINE  -
+smbpool            796G  6.58G   789G   0%  1.00x  ONLINE  -
+spoaxappool       1.98T   320G  1.67T  15%  1.00x  ONLINE  -
+uploadpool        1.13T   677G   483G  58%  1.00x  ONLINE  -
+webproxy_pool      992G   345G   647G  34%  1.00x  ONLINE  -
+
+
+
+Commands Executed
+
+root@brslp1pupfs001:~# zpool destroy pinvoice2010pool
+root@brslp1pupfs001:~# zpool status pinvoice2010pool
+cannot open 'pinvoice2010pool': no such pool
+root@brslp1pupfs001:~# df -h pinvoice2010pool
+df: (pinvoice2010pool) not a block device, directory or mounted resource
+root@brslp1pupfs001:~# zpool add pinvoice2019pool c0t60000970000592600087533034393441d0
+root@brslp1pupfs001:~# zpool add pinvoice2019pool c0t60000970000592600087533034393445d0
+root@brslp1pupfs001:~# zpool add pinvoice2019pool c0t60000970000592600087533034394141d0
+root@brslp1pupfs001:~# zpool add pinvoice2019pool c0t60000970000592600087533032383634d0
+root@brslp1pupfs001:~# zpool add pinvoice2019pool c0t60000970000592600087533033423538d0
+root@brslp1pupfs001:~# df -h pinvoice2019pool
+Filesystem             Size   Used  Available Capacity  Mounted on
+pinvoice2019pool       9.5T    31K       2.1T     1%    /pinvoice2019pool
+root@brslp1pupfs001:~# zpool status pinvoice2019pool
+  pool: pinvoice2019pool
+ state: ONLINE
+  scan: none requested
+config:
+
+        NAME                                     STATE     READ WRITE CKSUM
+        pinvoice2019pool                         ONLINE       0     0     0
+          c0t60000970000592600087533033314633d0  ONLINE       0     0     0
+          c0t60000970000592600087533033323033d0  ONLINE       0     0     0
+          c0t60000970000592600087533033323133d0  ONLINE       0     0     0
+          c0t60000970000592600087533033323233d0  ONLINE       0     0     0
+          c0t60000970000592600087533034393636d0  ONLINE       0     0     0
+          c0t60000970000592600087533034394136d0  ONLINE       0     0     0
+          c0t60000970000592600087533034393441d0  ONLINE       0     0     0
+          c0t60000970000592600087533034393445d0  ONLINE       0     0     0
+          c0t60000970000592600087533034394141d0  ONLINE       0     0     0
+          c0t60000970000592600087533032383634d0  ONLINE       0     0     0
+          c0t60000970000592600087533033423538d0  ONLINE       0     0     0
+
+errors: No known data errors
+
+
+
